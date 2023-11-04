@@ -1,0 +1,68 @@
+@media screen and (min-width: 768px) {
+	/*colors*/
+	header, main, footer{
+		background-image: none;
+		background-color: #fffefb;
+	}
+	#site-title, .primary-navigation-links .pages{
+		color: #763523;
+	}
+	footer{
+		color: black;
+	}
+
+	/*body*/
+	body{
+  		background-image: url("/~18zl107/a5/img/bread.jpg");
+  		background-size: cover;
+  		background-repeat: no-repeat;
+    	min-height: 100vh;
+	}
+
+	/*header*/
+	#site-title{
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	.primary-navigation-links .pages:hover {
+		background-color: #763523;
+		color: #fffefb;
+		transition-duration: 1s;
+	}
+
+	header a {
+		transition: color 1s;	
+		transition: background-color 1s;	
+	}
+
+	/*columns*/
+	.column-container {
+        display: flex;
+        align-items: flex-start;
+    }
+	.column {
+    	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+       	border-bottom-left-radius: 6px;
+    	border-bottom-right-radius: 0;
+    	flex: 2 1 400px;
+    }
+
+	header.column {
+       	border-bottom-left-radius: 0;
+    	border-bottom-right-radius: 6px;	
+    	flex: 1 1 200px;
+        max-width: 300px;
+    	margin-right: 32px; 	
+	}
+
+	/*shadows*/
+	header, blockquote, #logo{
+		box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	}
+
+	/*post comments*/
+	form label {
+	  max-width: 200px;
+	}
+
+}

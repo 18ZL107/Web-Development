@@ -1,0 +1,262 @@
+/*general*/
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*header, footer and headings*/
+#logo{
+  margin: 32px auto 16px auto;
+  width: 150px;
+  border-radius: 50%;
+}
+header, footer{
+  background-image: url("/~18zl107/a5/img/cake-overlay.jpg");
+  color: #fffefb;
+  text-align: center;
+}
+footer{
+  padding: 32px;
+  font-family: "IBM Plex Serif", "Georgia", serif;
+  font-size: 1rem;
+}
+header, footer, .heading{
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+h1{
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+}
+h2{
+  font-size: 1.75rem;
+  padding-top: 1.75rem;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+}
+h3{
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+}
+#site-title{
+  font-size: 2.5rem;
+  padding-bottom: 16px;
+  margin: 0;
+}
+.primary-navigation-links{
+  font-size: 1.375rem;
+  border-top: solid 1px #fffefb;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+header a{
+  text-decoration: none;
+  color: #fffefb;
+  display: block;
+  margin: 0;
+  padding: 16px 0;
+}
+
+/*general styles*/
+#site-title, .primary-navigation-links, .heading{
+  font-family: "Neucha", "Helvetica", sans-serif;
+}
+
+/*main section*/
+main{
+  font-family: "IBM Plex Serif", "Georgia", serif;
+  color: black;
+  background-color: #fffefb;
+  line-height: 1.5;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 48px;
+}
+/*links in content*/
+.links{
+  color: #763523;
+}
+
+/*Home page styles*/
+/*quote section*/
+blockquote{
+  background-color: #ede2cd;
+  padding: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 8px;
+}
+#reference{
+  text-align: right;
+}
+
+
+/*Recipes page styles*/
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td{
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+th{
+  background-color: #ede2cd;
+}
+.popup{
+  position: absolute;
+  color: #fffefb;
+  background-color: black;
+  border-radius: 6px;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+  opacity: 0;
+  top: 0; 
+  left: 0;
+  z-index: 1;
+}
+.Vegan{
+  position: relative;
+}
+.Vegan:hover .popup{
+  transition: opacity 2s;
+  opacity: 1;
+  position: absolute;
+}
+
+
+/*Pizza dough page styles*/
+.directions li img {
+  display: block;
+  margin: 16px 0;   
+  max-height: 400px;
+}
+
+/*buttons*/
+.quantity-button {
+  color: #763523; 
+  font-size: 1em;
+  font-family: "Neucha", "Helvetica", sans-serif;
+
+  display: inline-block;
+  margin: 16px 8px 0 0; 
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.directions {
+  padding-left: 3.5em;
+  position: relative;
+}
+
+.directions li {
+  margin: 0 0 1.0em 0.5em;
+}
+
+.directions li .hidden {
+  position: absolute;
+  left: -9999em;
+}
+
+.directions li .hide-direction {
+  position: absolute;
+  left: 0;
+
+  font-size: 1em;
+  font-family: "Neucha", "Helvetica", sans-serif;
+  color: #763523;
+  background-color: #fffefb;
+
+  border-radius: 50%;
+}
+
+
+/*Displaying comments*/
+div .comments {
+  background-color: #ede2cd;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.title {
+  margin-bottom: 8px;
+}
+div .username, div .commenttime, div label, .afterpost {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+div .username {
+  padding-bottom: 4px;
+  margin: 0 0 0 0;
+}
+div .commenttime {
+  padding-bottom: 8px;
+  margin: 0 0 0 0;
+}
+div .commenttext {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+div .afterpost {
+  background-color: #ede2cd;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+/*Post a comment*/
+form {
+  max-width: 1024px;
+}
+div .row {
+  padding-top: 16px;
+}
+form .joined {
+  display: flex;
+}
+form label {
+  vertical-align: top;
+  min-width: 150px;
+  flex: 0 0 15em;
+}
+form .joined input, form .joined textarea {
+  margin: 0;
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+#post {
+  float: right;
+  color: #763523; 
+  font-size: 1em;
+  font-family: "Neucha", "Helvetica", sans-serif;
+  text-decoration: line-through;
+
+  display: inline-block;
+  margin: 0 0 0 0; 
+  padding: 8px 16px;
+  border-radius: 6px;
+  opacity: 0.5;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.button {
+  text-decoration: none;
+  opacity: 1;
+}
